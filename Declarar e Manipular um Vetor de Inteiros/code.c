@@ -1,54 +1,43 @@
 #include <stdio.h>
 
-#define TAXA_DESCONTO 0.09 // 9%
-
-float calcular_salario_bruto(float valor_hora, float horas_trabalhadas) {
-    return valor_hora * horas_trabalhadas;
-}
-
-float calcular_desconto(float salario_bruto) {
-    return salario_bruto * TAXA_DESCONTO;
-}
-
-
-float calcular_salario_liquido(float salario_bruto, float desconto) {
-    return salario_bruto - desconto;
-}
+#define TAMANHO 5
 
 int main() {
-    float valor_hora;
-    float horas_trabalhadas;
-    float salario_bruto;
-    float desconto;
-    float salario_liquido;
-
-    printf("--- Calculadora Salarial Modular ---\n");
+    int vendas_diarias[TAMANHO];
     
-    printf("Digite o valor da hora de trabalho (R$): ");
-    if (scanf("%f", &valor_hora) != 1) {
-        printf("Erro de leitura para o valor da hora.\n");
-        return 1;
+    int soma_total = 0;
+    
+    int i;
+
+    printf("--- Analise de Vendas Diarias ---\n");
+    
+    printf("\nInsira a quantidade de vendas realizadas em 5 dias:\n");
+    
+    for (i = 0; i < TAMANHO; i++) {
+        printf("Vendas do Dia %d: ", i + 1);
+        
+        if (scanf("%d", &vendas_diarias[i]) != 1) {
+             printf("Erro: Entrada invalida. Encerrando.\n");
+             return 1;
+        }
     }
 
-    printf("Digite a quantidade de horas trabalhadas no mes: ");
-    if (scanf("%f", &horas_trabalhadas) != 1) {
-        printf("Erro de leitura para as horas trabalhadas.\n");
-        return 1;
+    for (i = 0; i < TAMANHO; i++) {
+        soma_total += vendas_diarias[i]; 
     }
-
-    salario_bruto = calcular_salario_bruto(valor_hora, horas_trabalhadas);
-
-    desconto = calcular_desconto(salario_bruto);
-
-    salario_liquido = calcular_salario_liquido(salario_bruto, desconto);
 
     printf("\n----------------------------------------\n");
-    printf("         RESUMO SALARIAL\n");
+    printf("   RELATORIO DE VENDAS DO PERIODO\n");
     printf("----------------------------------------\n");
-    printf("Salario Bruto (Valor x Horas): R$ %.2f\n", salario_bruto);
-    printf("Desconto (9%%):                 R$ %.2f\n", desconto);
-    printf("----------------------------------------\n");
-    printf("SALARIO LIQUIDO A RECEBER:     R$ %.2f\n", salario_liquido);
+    
+    printf("Vendas por dia:\n");
+    for (i = 0; i < TAMANHO; i++) {
+        printf("Dia %d: %d\n", i + 1, vendas_diarias[i]);
+    }
+
+    printf("\n----------------------------------------\n");
+    
+    printf("Soma total de vendas no periodo: %d\n", soma_total);
     printf("----------------------------------------\n");
 
     return 0;
