@@ -1,2 +1,25 @@
-# Fundamentos-de-Algoritmos-e-Programacao
-Atividades práticas da matéria da faculdade de ADS chamada "Fundamentos de Algoritmos e Programação", focada na linguagem de programação C.
+# Algoritmos e Programação Estruturada
+
+
+## 🔴 Unidade 1 🔴
+*Fundamentos de Algoritmos e Programação*
+
+➥
+
+---
+## 🔴 Unidade 2 🔴
+*Estruturas de Controle e Repetição*
+
+➥
+
+---
+## 🔴 Unidade 3 🔴
+*Vetores, Matrizes, Structs e Ponteiros*
+
+➥
+
+---
+## 🔴 Unidade 4 🔴
+*Funções e Passagem de Parâmetros*
+
+➥
