@@ -36,21 +36,34 @@ inseridos e permitir que o usuário continue até digitar o número 0
 para somar compras, e o número zero (0) é o seu botão de "Fechar Conta e
 Totalizar".***
 
+--
+
 *Ele pega duas caixinhas na memória:*
 
-- Uma chamada Soma, que começa zerada (soma = 0). Esta caixinha vai
-guardar o total acumulado.
-- Outra chamada Número, que vai receber o que você digitar a cada vez.
-O programa te pergunta o primeiro número. Em seguida, ele entra em um
-ciclo de repetição (while) que só tem uma regra:
-- Enquanto o número que você digitou não for zero, o ciclo continua.
-Dentro desse ciclo, ele faz duas coisas, repetidamente:
-1- Soma: Pega o número que você acabou de digitar e adiciona ele à
-caixinha "Soma". O total acumulado cresce.
-2- Pergunta de Novo: Pede para você digitar o próximo número.
-Se você digitar qualquer número que não seja zero (como 5, 10, -2), ele
-volta para o início do ciclo, soma o número e pergunta de novo.
-Quando você finalmente digita 0. Nesse momento, a regra do ciclo (numero
-!= 0) se torna falsa, e o programa quebra o ciclo.
-Resumindo: ele é um loop que acumula valores até que você forneça o
-sinal de parada (o zero / 0).
+*- Uma chamada **Soma**, que começa zerada (soma = 0). Esta caixinha vai
+guardar o total acumulado.*
+*- Outra chamada **Número**, que vai receber o que você digitar a cada vez.*
+  
+*O programa te pergunta o primeiro número. Em seguida, ele entra em um
+ciclo de repetição (while) que só tem uma regra:*
+
+--
+
+***- Enquanto o número que você digitou não for zero, o ciclo continua.
+Dentro desse ciclo, ele faz duas coisas, repetidamente:***
+
+***1- Soma:*** *Pega o número que você acabou de digitar e adiciona ele à
+caixinha "Soma". O total acumulado cresce.*
+
+***2- Pergunta de Novo:*** *Pede para você digitar o próximo número.*
+
+--
+
+*Se você digitar qualquer número que não seja zero (como 5, 10, -2), ele
+volta para o início do ciclo, soma o número e pergunta de novo.*
+
+*Quando você finalmente digita 0. Nesse momento, a regra do ciclo (numero
+!= 0) se torna falsa, e o programa quebra o ciclo.*
+
+***Resumindo:*** *ele é um loop que acumula valores até que você forneça o
+sinal de parada (o zero / 0).*
