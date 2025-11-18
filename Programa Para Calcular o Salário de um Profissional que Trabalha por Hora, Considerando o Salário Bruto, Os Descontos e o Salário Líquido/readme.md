@@ -33,3 +33,45 @@ para uma empresa que deseja automatizar o cálculo dos salários
 de seus funcionários que trabalham por hora. O cálculo precisa ser
 realizado de forma modular, separando o cálculo do salário bruto,
 os descontos e o valor líquido a ser pago ao funcionário.*
+
+---
+## Execução do Código
+
+![Execução](../images/workingcode4.png)
+
+## Explicação
+
+***O programa começa como um formulário:***
+
+- *Ele te pergunta: "Quanto você ganha por hora?"*
+- *E depois: "Quantas horas você trabalhou este mês?"*
+
+--
+
+*Aqui está a parte organizada. O programa não faz todas as contas em um
+lugar só, ele chama três funções para fazer cada tarefa:*
+
+***Salário Bruto (calcular_salario_bruto)***
+- *Trabalho: Ele pega o valor da hora e multiplica pelas horas trabalhadas.*
+- *Resultado: O Salário Bruto (o total antes de qualquer imposto ou
+desconto).*
+
+***Desconto (calcular_desconto)***
+- *Trabalho: Ele pega o Salário Bruto calculado e simplesmente retira 9% (a
+taxa de desconto).*
+- *Resultado: O Valor do Desconto.*
+
+***Salário Líquido (calcular_salario_liquido)***
+- *Trabalho: Ele pega o Salário Bruto e subtrai o Valor do Desconto.*
+- *Resultado: O Salário Líquido (o que o funcionário realmente vai receber).*
+
+--
+
+*No final, o programa pega os resultados de cada assistente e exibe um
+relatório claro, mostrando o bruto, quanto foi descontado e o valor final a ser
+pago.*
+
+***Resumindo:*** *O algoritmo usa a modularização para isolar cada cálculo
+(Bruto, Desconto, Líquido) em sua própria função, tornando o código limpo,
+fácil de entender e simples de atualizar se a taxa de desconto mudar, por
+exemplo.*
