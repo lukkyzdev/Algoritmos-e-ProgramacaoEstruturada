@@ -32,3 +32,6 @@ calcular resultados e operadores relacionais e lógicos para validar
 condições.*
 
 ---
+## Execução do Código
+
+## Explicação
