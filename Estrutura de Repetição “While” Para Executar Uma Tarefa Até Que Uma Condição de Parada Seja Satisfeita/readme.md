@@ -20,7 +20,7 @@ valor sentinela para encerrar o programa.*
 
 *Imagine que você está desenvolvendo uma ferramenta
 simples de cálculo, onde o usuário deseja somar uma série de
-números inteiros até decidir que não deseja inserir mais 3 nenhum
+números inteiros até decidir que não deseja inserir mais nenhum
 número. A cada inserção, o programa deve somar os números já
 inseridos e permitir que o usuário continue até digitar o número 0
 (zero), que encerra o programa e exibe o resultado final da soma.*
