@@ -34,7 +34,7 @@ condições.*
 ---
 ## Execução do Código
 
-![Execução](./images/workingcode1.png)
+![Execução](../images/workingcode1.png)
 
 ## Explicação
 
